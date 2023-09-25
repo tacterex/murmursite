@@ -15,3 +15,14 @@ main.addEventListener('mouseup', function(){
     audio.pause()
     audio.currentTime = 0
 })
+
+main.addEventListener('touchstart', function(){
+    console.log('Pur')
+    audio.play()
+    navigator.vibrate([200])
+})
+
+main.addEventListener('touchend', function(){
+    audio.pause()
+    audio.currentTime = 0
+})
